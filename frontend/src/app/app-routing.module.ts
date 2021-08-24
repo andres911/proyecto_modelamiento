@@ -14,6 +14,7 @@ const routes: Routes = [
     { path: 'regre_cuadratica', component: RegrecuadraticaComponent},
     { path: 'montecarlo', component: MontecarloComponent},
     { path: 'perfil', component: PerfilComponent},
+    { path: '', component: PerfilComponent},
 ];
 
 @NgModule({
