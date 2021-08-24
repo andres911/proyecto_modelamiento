@@ -12,21 +12,30 @@ import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule} from '@angular/common/http';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatInputModule} from '@angular/material/input';
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
-import { PandasComponent } from './unidad1/pandas/pandas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { EstadisticaComponent } from './unidad2/estadistica/estadistica.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
 import { PerfilComponent } from './perfil/perfil.component';
+import { PromediomovilComponent } from './pronostico/promediomovil/promediomovil.component';
+import { SuavizamientoComponent } from './pronostico/suavizamiento/suavizamiento.component';
+import { RegrelinealComponent } from './pronostico/regrelineal/regrelineal.component';
+import { RegrecuadraticaComponent } from './pronostico/regrecuadratica/regrecuadratica.component';
+import { MontecarloComponent } from './simulacion/montecarlo/montecarlo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PandasComponent,
-    EstadisticaComponent,
     PerfilComponent,
+    PromediomovilComponent,
+    SuavizamientoComponent,
+    RegrelinealComponent,
+    RegrecuadraticaComponent,
+    MontecarloComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +53,10 @@ import { PerfilComponent } from './perfil/perfil.component';
     MatCardModule,
     HttpClientModule,
     MatProgressBarModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

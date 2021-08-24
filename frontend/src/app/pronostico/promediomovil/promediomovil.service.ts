@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/internal/Observable';
 @Injectable({
   providedIn: 'root',
 })
-export class PandasService {
+export class PromediomovilService {
   constructor(private http: HttpClient) {}
 
   // Returns an observable

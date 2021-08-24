@@ -13,21 +13,30 @@
     <h1 class="example-app-name">Modelamiento y Simulación</h1>
     <div class="spacer"></div>
     
-    <a mat-button (click)="snav1.toggle(); snav2.close()">Unidad 1</a>
-    <a mat-button (click)="snav2.toggle(); snav1.close()">Unidad 2</a>
-    <a mat-button (click)="snav1.close(); snav2.close()" routerLink="perfil"> <mat-icon>face</mat-icon>Perfil</a>
+    <a mat-button (click)="snav1.toggle(); snav2.close();">Pronostico</a>
+    <a mat-button (click)="snav2.toggle(); snav1.close();">Simulación</a>
+    <a mat-button (click)="snav1.close(); snav2.close();" routerLink="perfil"> <mat-icon>face</mat-icon>Perfil</a>
   </mat-toolbar>
 
   <mat-sidenav-container class="example-sidenav-container">
     <mat-sidenav #snav1>
       <mat-nav-list>
-        <a mat-list-item (click)="snav1.close()" routerLink="unidad1">Introducción Pandas</a>
+        <a mat-list-item (click)="snav1.close()" routerLink="promedio_movil">Promedio movil</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item (click)="snav1.close()" routerLink="suavizamiento">Suavizamiento</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item (click)="snav1.close()" routerLink="regre_lineal">Regresión lineal</a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item (click)="snav1.close()" routerLink="regre_cuadratica">Regresión cuadrática</a>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav #snav2>
       <mat-nav-list>
-        <a mat-list-item (click)="snav2.close()" routerLink="unidad2">Estadistica</a>
+        <a mat-list-item (click)="snav2.close()" routerLink="montecarlo">Montecarlo</a>
       </mat-nav-list>
     </mat-sidenav>
 

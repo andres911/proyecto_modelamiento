@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PandasComponent } from './pandas.component';
+import { RegrelinealComponent } from './regrelineal.component';
 
-describe('PandasComponent', () => {
-  let component: PandasComponent;
-  let fixture: ComponentFixture<PandasComponent>;
+describe('RegrelinealComponent', () => {
+  let component: RegrelinealComponent;
+  let fixture: ComponentFixture<RegrelinealComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PandasComponent ]
+      declarations: [ RegrelinealComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PandasComponent);
+    fixture = TestBed.createComponent(RegrelinealComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
