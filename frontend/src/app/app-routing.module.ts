@@ -6,6 +6,8 @@ import { SuavizamientoComponent } from './pronostico/suavizamiento/suavizamiento
 import { RegrelinealComponent } from './pronostico/regrelineal/regrelineal.component';
 import { RegrecuadraticaComponent } from './pronostico/regrecuadratica/regrecuadratica.component';
 import { MontecarloComponent } from './simulacion/montecarlo/montecarlo.component';
+import { InventarioComponent } from './simulacion/inventario/inventario.component';
+import { LineaEsperaComponent } from './simulacion/linea-espera/linea-espera.component';
 
 const routes: Routes = [
     { path: 'promedio_movil', component: PromediomovilComponent},
@@ -13,6 +15,8 @@ const routes: Routes = [
     { path: 'regre_lineal', component: RegrelinealComponent},
     { path: 'regre_cuadratica', component: RegrecuadraticaComponent},
     { path: 'montecarlo', component: MontecarloComponent},
+    { path: 'inventario', component: InventarioComponent},
+    { path: 'linea_espera', component: LineaEsperaComponent},
     { path: 'perfil', component: PerfilComponent},
     { path: '', component: PerfilComponent},
 ];

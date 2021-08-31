@@ -15,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatDialogModule} from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,6 +27,8 @@ import { SuavizamientoComponent } from './pronostico/suavizamiento/suavizamiento
 import { RegrelinealComponent } from './pronostico/regrelineal/regrelineal.component';
 import { RegrecuadraticaComponent } from './pronostico/regrecuadratica/regrecuadratica.component';
 import { MontecarloComponent } from './simulacion/montecarlo/montecarlo.component';
+import { InventarioComponent } from './simulacion/inventario/inventario.component';
+import { LineaEsperaComponent } from './simulacion/linea-espera/linea-espera.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,8 @@ import { MontecarloComponent } from './simulacion/montecarlo/montecarlo.componen
     RegrelinealComponent,
     RegrecuadraticaComponent,
     MontecarloComponent,
+    InventarioComponent,
+    LineaEsperaComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,8 @@ import { MontecarloComponent } from './simulacion/montecarlo/montecarlo.componen
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
